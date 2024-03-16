@@ -1,0 +1,7 @@
+{
+  "name": "pocket-lab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

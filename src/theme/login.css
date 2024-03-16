@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FFA500;
+  color: white;
+}
+
+.login-page{
+  margin: 0 auto;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 360px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  *{
+    margin: 8px 0px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .close{
+    align-self: flex-end;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 35px;
+    height: 25px;
+    font-size: 24px;
+  }
+  
+  .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    
+    .secret-eye{
+      position: absolute;
+      width: 20px;
+      height: auto;
+      right: 15px;
+      
+      &.off{
+        bottom: -48px;
+      }
+      
+      &.on{
+        bottom: -46px;
+      }
+      
+      &.hide{
+        display: none;
+      }
+    }
+  }
+  
+  .title, .sign-up, .subtitle, .login, .close{
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  
+  .sign-up, .form-input, .error-message{
+    padding: 10px 16px;
+  }
+  
+  .title{
+    font-size: 32px;
+  }
+  
+  .sign-up{
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+    border: solid 2px #ffffff;
+    font-size: 16px;
+  }
+  
+  .subtitle{
+    font-size: 16px;
+    margin-bottom: 0;
+    
+    &.hide{
+      display: none;
+    }
+    
+    &.left{
+      align-self: flex-start;
+    }
+  }
+  
+  .form-input{
+    width: 100%;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bababa;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    
+    &.hide{
+      display: none;
+    }
+    
+    &:focus{
+      border-color: #FFE13C;
+      outline: none;
+    }
+  }
+  
+  .login{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    padding: 12px 0;
+  }
+  
+  .logo{
+    margin-top: 40px;
+    width: 135px;
+    height: auto;
+  }
+  
+  .error-message{
+    width: 100%;
+    font-size: 13px;
+    font-family: helvetica;
+    color: #020202;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    display: none;
+    
+    &.show{
+      display: block;
+    }
+  }
+}
